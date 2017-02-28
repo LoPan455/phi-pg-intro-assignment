@@ -10,7 +10,7 @@ $(document).ready(function(){
         console.log('response', response);
         $('#bookShelf').empty();
         for (var i = 0; i < response.length; i++) {
-          $('#bookShelf').append('<li>Title: ' + response[i].title + ', Author: ' + response[i].author + '</li>');
+          $('#bookShelf').append('<li>Title: ' + response[i].title + ', Author: ' + response[i].author + ', Edition: ' + response[i].edition + ', Publisher: ' + response[i].publisher + '</li>');
         }
       }
     });
@@ -22,7 +22,6 @@ $(document).ready(function(){
     newBookObject.author = $('#newBookAuthor').val();
     newBookObject.edition = $('#newEdition').val();
     newBookObject.publisher = $('#newPublisher').val();
-    console.log(newBookObject);
     $.ajax({
       type: 'POST',
       url: '/books/new',
