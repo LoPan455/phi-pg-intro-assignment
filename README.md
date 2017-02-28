@@ -21,6 +21,7 @@ Run the following query in Postico to add two new columns to our books table.
 (DONE)
 
 Tasks
-Update our HTML form to capture those new fields.
+Update our HTML form to capture those new fields. (Done)
+
 Update our server-side database queries to use them for insertion.
 Then update our AJAX GET request to append all of our information to the DOM when it returns successfully so we can see the data from our database.
