@@ -20,6 +20,9 @@ $(document).ready(function(){
     var newBookObject = {};
     newBookObject.title = $('#newBookTitle').val();
     newBookObject.author = $('#newBookAuthor').val();
+    newBookObject.edition = $('#newEdition').val();
+    newBookObject.publisher = $('#newPublisher').val();
+    console.log(newBookObject);
     $.ajax({
       type: 'POST',
       url: '/books/new',
